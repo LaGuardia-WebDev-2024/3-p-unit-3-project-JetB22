@@ -20,14 +20,20 @@ Select ONE Additional Feature to Add
   <title>Project: Recipe book</title>
   <meta charset="utf-8">
   <style>
- html{background-image:url(https://texturelabs.org/wp-content/uploads/Texturelabs_Wood_189S.jpg);
+ html{background-image:url(https://wallpapers.com/images/featured/cottagecore-e7wlc2ft5gnxi4mk.jpg);
   background-size :cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
   font-family: 'Courier New', Courier, monospace;
 }
   
-body{background-color: rgba(194, 197, 170, 0.75);}
+body{background-color: rgba(194, 197, 170, 0.50); 
+  border: #582F0E;
+  border-width: 20px;
+  border-style:solid; 
+  width: 1500px;
+  height: auto;
+  margin: auto;}
 
 h1{color:#582F0E}
 
@@ -36,10 +42,43 @@ h2{color: #7F4F24;}
 table, th{border-style: solid;border-color: #936639;background-color: #A4AC86;}
 
 li{width: 300px;}
+ 
 
-  
+.container {
+  --size: min(80vmin, 300px);
+  position: relative;
+  width: var(--size);
+  height: var(--size);
+}
 
-  </style>
+img {
+  clip-path: url(#squircleClip);
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.border {
+  position: absolute;
+  inset: 0;
+  clip-path: url(#squircleClip);
+  scale: 1;
+  opacity: 0;
+  background: #A4AC86;
+  box-shadow:
+    inset 10px 10px 20px #d9e4b4,
+    inset -10px -10px 20px #434731;
+  border-radius: calc(var(--size) / 6);
+  transition: 0.3s cubic-bezier(.51,.61,0,2.3);
+}
+
+.container:hover .border {
+  scale: 1.1;
+  opacity: 1;
+}
+ 
+
+ </style>
 </head>
 
 <body>
@@ -51,25 +90,37 @@ li{width: 300px;}
 
   <ol>
     <li><a href="#WhateverYouWant">Whatever You Want Cookies</a></li>
-    <li><a href="?">Lemon Shortbread Cookies</a></li>
+    <li><a href="#LemonShortbread">Lemon Shortbread Cookies</a></li>
     <li><a href="?">Snickerdoodle Cookies</a></li>
   </ol>
 
   <h2 id="WhateverYouWant"> WHATEVER YOU WANT COOKIES</h2>
 
-  <ul>
+    <div class="container">
+  <div class="border" aria-hidden="true"></div>
+  <img src="WAHTE VR YOU WANT COOKIES.jpg" alt="spheres">
+</div>
+
+<svg width="0" height="0" viewBox="0 0 1 1">
+  <clipPath id="squircleClip" clipPathUnits="objectBoundingBox">
+    <path d="M 0,0.5 C 0,0 0,0 0.5,0 S 1,0 1,0.5 1,1 0.5,1 0,1 0,0.5"
+    />
+  </clipPath>
+</svg>
+ 
+
+<ul>
     <li>Time: 1 Hour</li>
     <li>Serving size 1 Cookie</li>
     <li>Serves: 20</li>
   </ul>
 
 <table>
-  <thead>
-  <tr>
+  <thead>    
+    <tr>
     <th>Ingredients</th>
     <th>Amount</th>
-    
-  </tr>
+    </tr>
   </thead>
   
   <tbody>
@@ -116,6 +167,74 @@ li{width: 300px;}
 <p><strong>STEP 5:</strong>BAKE AT 350 FOR LIKE 18 to 20 Minutes!</p>
 <p><strong>STEP 6: LET COOL FOR A LITTLE BIT THEN EAT</strong></p>
   <p><em>Source: <a href="#WhateverYouWant">Recipe</a></em></p>
+
+<h2 id="LemonShortbread">Lemon Shortbread Cookies</h2>
+
+<div class="container">
+  <div class="border" aria-hidden="true"></div>
+  <img src="image.jpg" alt="spheres">
+</div>
+
+<svg width="0" height="0" viewBox="0 0 1 1">
+  <clipPath id="squircleClip" clipPathUnits="objectBoundingBox">
+    <path d="M 0,0.5 C 0,0 0,0 0.5,0 S 1,0 1,0.5 1,1 0.5,1 0,1 0,0.5"
+    />
+  </clipPath>
+</svg>
+
+<ul>
+  <li>Time 4 Hours</li>
+  <li>Serving Size 2 Cookies</li>
+  <li>Serves: 20</li>
+</ul>
+
+<table>
+<thead>
+<tr>
+<th>Ingredients</th>
+<th>Amount</th>
+</tr>
+</thead>
+
+<tbody>
+<th>SUGA</th>
+<th>2/3 CUP OR 1 CUP IDK</th>
+</tbody>
+
+<tbody>
+  <th>ZEST OF lemon</th>
+  <th>2 SPOONTABLES</th>
+</tbody>
+
+<tbody>
+<th>BUTTER</th>
+<th>1 Cup</th>
+</tbody>
+
+<tbody>
+<th>LEMON JUICE</th>
+<th>1 to 2 SPOONS OF TABLES</th>
+</tbody>
+
+<tbody>
+<th>All PURPOSE FLOUT</th>
+<th>2 CUPS</th>
+</tbody>
+
+<tbody>
+<th>CORNSTARCH</th>
+<th>1 to 2/3 Cups</th>
+</tbody>
+
+<th>SALT</th>
+<th>LIKE A PINCH IDK SALTY</th>
+</table>
+
+
+
+
+
+
 </center>
 </body>
 
