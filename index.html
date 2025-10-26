@@ -27,25 +27,64 @@ Select ONE Additional Feature to Add
   font-family: 'Courier New', Courier, monospace;
 }
   
-body{background-color: rgba(194, 197, 170, 0.50); 
-  border: #582F0E;
-  border-width: 20px;
-  border-style:solid; 
+body
+{background-color: rgba(194, 197, 170, 0.50); 
+  cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>🍪</text></svg>") 16 0,auto; /*!emojicursor.app*/
+  margin: auto;
   width: 1500px;
-  height: auto;
-  margin: auto;}
+font-size: x-large;
+ padding: 20px;  
+    background-size: 
+      100px 10px, 
+      100px 10px, 
+      10px 100px, 
+      10px 100px;
+    background-position: 
+      0 0, 
+      0 100%, 
+      0 0, 
+      100% 0;
+    background-repeat: 
+      repeat-x, 
+      repeat-x, 
+      repeat-y, 
+      repeat-y;
+    background-image: 
+      linear-gradient(to right, #3f2711 50%, transparent 50%), 
+      linear-gradient(to right, #3f2711 50%, transparent 50%), 
+      linear-gradient(to bottom,#3f2711 50%, transparent 50%), 
+      linear-gradient(to bottom,#3f2711 50%, transparent 50%);
+    animation: BORDERAHHHH 1s infinite;}
+
+    @keyframes BORDERAHHHH {
+    0% {
+      background-position: 
+        0 0, 
+        0 100%, 
+        0 0, 
+        100% 0;
+    } 
+    100% {
+      background-position: 
+        100px 0, 
+        -100px 100%, 
+        0 -100px, 
+        100% 100px;
+    }
+}
 
 h1{color:#582F0E}
 
 h2{color: #7F4F24;}
 
-table, th{border-style: solid;border-color: #936639;background-color: #A4AC86;}
+table, th{border-style: solid;border-color: #936639;background-color: #A4AC86; border-radius: 8px;
+padding: 5px;}
 
-li{width: 300px;}
+li{width: 400px;}
  
 
 .container {
-  --size: min(80vmin, 300px);
+  --size: min(80vmin, 500px);
   position: relative;
   width: var(--size);
   height: var(--size);
@@ -76,25 +115,71 @@ img {
   scale: 1.1;
   opacity: 1;
 }
+
+p{background-color: rgba(231, 255, 187, 0.5);
+  width: 800px;
+  padding: 10px;
+  border-radius: 10px;}
  
+h2 {background-color: rgb(207, 226, 172);
+  width: 1100px;
+border-radius: 10px;
+border-color: #434731;
+border-style: solid;}
+
+h1{
+background-color: rgba(255, 181, 120, 0.467);
+width: 1200px;
+border-radius: 10px;
+border-color: #582F0E;
+border-style: double;
+border-width: 10px;
+color: #484848;
+font-size: 50px;
+font-weight: bold;
+font-family: monospace;
+letter-spacing: 7px;
+cursor: pointer
+}
+h1 span{
+  transition: .5s linear
+}
+h1:hover span:nth-child(1){
+  margin-right: 5px
+}
+h1:hover span:nth-child(1):after{
+  content: "";
+}
+h1:hover span:nth-child(2){
+  margin-left: 30px
+}
+h1:hover span{
+  color: #ffffff;
+  text-shadow: 0 0 10px #ddeba1,
+               0 0 20px #929b6a, 
+               0 0 40px #afb97f;
+}
+
+a,h1,.container :hover{ cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>😋</text></svg>") 16 0,auto; /*!emojicursor.app*/}
 
  </style>
-</head>
+
+ </head>
 
 <body>
   <center>
 <br>
-  <h1><strong><em>Jet's Cookie Book</em></strong></h1>
+  <h1>JET'S <span> COOKIE </span> <span> BOOK</span> </h1>
 
   <h2>Contents:</h2>
 
   <ol>
     <li><a href="#WhateverYouWant">Whatever You Want Cookies</a></li>
     <li><a href="#LemonShortbread">Lemon Shortbread Cookies</a></li>
-    <li><a href="?">Snickerdoodle Cookies</a></li>
+    <li><a href="#Snickerdoodle">Snickerdoodle Cookies</a></li>
   </ol>
 
-  <h2 id="WhateverYouWant"> WHATEVER YOU WANT COOKIES</h2>
+  <h2 id="WhateverYouWant"> WHATEVER YOU WANT COOKIES</h2><br>
 
     <div class="container">
   <div class="border" aria-hidden="true"></div>
@@ -162,13 +247,14 @@ img {
   <p><strong>Step 1:</strong> PUT BUTTER AND SUGAR IN BOWL MIX THAT SHIT TILL CREAMY
   </p>
   <p><strong>STEP 2:</strong>PUT EGGS AND VANILLA IN ONE AT A TIME KEEPING MIXING</p>
-<p><strong>STEP 3:</strong>ADD FLOUR SLOWLY TILL ITS A THICK DOUGH SHOULD BE MOULDABLE AND BE ABLE TO BE PICKED UP WITH YOUR HANDS</p>
-<p><strong>STEP 4:</strong>ADD WHATEVER YOU WANT TO THE COOKIES THEY WILL BAKE WITH ANY MIX INS YOU WANT</p>
-<p><strong>STEP 5:</strong>BAKE AT 350 FOR LIKE 18 to 20 Minutes!</p>
-<p><strong>STEP 6: LET COOL FOR A LITTLE BIT THEN EAT</strong></p>
-  <p><em>Source: <a href="#WhateverYouWant">Recipe</a></em></p>
+  <p><strong>STEP 3:</strong>ADD FLOUR SLOWLY TILL ITS A THICK DOUGH SHOULD BE MOULDABLE AND
+  BE ABLE TO BE PICKED UP WITH YOUR HANDS</p>
+  <p><strong>STEP 4:</strong>ADD WHATEVER YOU WANT TO THE COOKIES THEY WILL BAKE WITH ANY MIX INS YOU WANT</p>
+  <p><strong>STEP 5:</strong>BAKE AT 350 FOR LIKE 18 to 20 Minutes!</p>
+  <p><strong>STEP 6: LET COOL FOR A LITTLE BIT THEN EAT</strong></p>
+  <p><em>Source: <a target="_blank" href="https://jetb22.github.io/unit-3-Project-second-website/">Recipe</a></em></p>
 
-<h2 id="LemonShortbread">Lemon Shortbread Cookies</h2>
+<h2 id="LemonShortbread">Lemon Shortbread Cookies</h2><br>
 
 <div class="container">
   <div class="border" aria-hidden="true"></div>
@@ -226,15 +312,130 @@ img {
 <th>1 to 2/3 Cups</th>
 </tbody>
 
+<tbody>
 <th>SALT</th>
 <th>LIKE A PINCH IDK SALTY</th>
+</tbody>
+
+<tbody>
+<th>VANILLA EXTRACT</th>
+<th>1/2 TEASPOON</th>
+
+</tbody>
+
 </table>
 
+<p><strong>Step 1:</strong> MIX LEMON ZEST AND SUGAR TOGETHER IN A FOOD PROCESSOR THEN MIX TILL HOMOGENEOUS
+  </p>
+  <p><strong>STEP 2:</strong>COMBINE LEMON SUGAR AND BUTTER TILL CREAMY (SCRAPE AS NEEDED)</p>
+  <p><strong>STEP 3:</strong>Add Lemon Juice and Vanilla</p>
+  <p><strong>STEP 4:</strong>ADD FLOUR, CORN STARCH AND SALT Till dough DOUGHS</p>
+  <p><strong>STEP 5:</strong>Roll dough out on parchment or counter with flour till 1/2 to 1/4 of an inch. Cover and Refriderate for 2 to 3 hours</p>
+  <p><strong>STEP 6:</strong>CUT OUT COOKIES WITH COOKIE CUTTER REPEAT TILL NO MORE DOUGH</p>
+  <p><strong>STEP 7:BAKE AT 350 FOR 15 to 16 MINUTES TILL LIGHT BROWN</strong></p>
+  <p><strong>Let Cool And Enjoy</strong></p>
+  <p><em>Source: <a target="_blank" href="https://jetb22.github.io/unit-3-Project-second-website/">Recipe</a></em></p>
 
 
 
+<h2 id="Snickerdoodle">Snickerdoodle Cookies</h2>
+<br>
+<div class="container">
+  <div class="border" aria-hidden="true"></div>
+  <img src="Snickerdoodle.webp" alt="spheres">
+</div>
+
+<svg width="0" height="0" viewBox="0 0 1 1">
+  <clipPath id="squircleClip" clipPathUnits="objectBoundingBox">
+    <path d="M 0,0.5 C 0,0 0,0 0.5,0 S 1,0 1,0.5 1,1 0.5,1 0,1 0,0.5"
+    />
+  </clipPath>
+</svg>
+
+<ul>
+  <li>Time 1 Hour</li>
+  <li>Serving Size 1 Cookies</li>
+  <li>Serves: 24</li>
+</ul>
 
 
+<table>
+<thead>
+<tr>
+<th>Ingredients</th>
+<th>Amount</th>
+</tr>
+</thead>
+
+<tbody>
+<th>SUGA</th>
+<th>1 1/2 CUPS</th>
+</tbody>
+
+<tbody>
+  <th>CHICKEN BABYS</th>
+  <th>2</th>
+</tbody>
+
+<tbody>
+<th>BUTTER</th>
+<th>1 Cup</th>
+</tbody>
+
+<tbody>
+<th>CREAM OF TARTAR</th>
+<th>2 TEASPOONS</th>
+</tbody>
+
+<tbody>
+<th>All PURPOSE FLOUT</th>
+<th>2 2/3 CUPS</th>
+</tbody>
+
+<tbody>
+<th>Baking SODA</th>
+<th>1 TEASPOON</th>
+
+</tbody>
+
+<tbody>
+<th>Sugar 2nd time</th>
+<th>3 Tablespoons</th>
+</tbody>
+
+<tbody>
+<th>CINNAMONOM</th>
+<th>3 Spoon of tea</th>
+</tbody>
+
+<tbody>
+<th>VANILLA EXTRACT</th>
+<th>Teaspoon one</th>
+</tbody>
+
+<tbody>
+<th>SALT</th>
+<th>1/4 teaspoon</th>
+</th>
+
+</tbody>
+</table>
+
+<p><strong>Step 1:</strong> MIX SUGAR AND BUTTER TILL CREAMY</p>
+  <p><strong>STEP 2:</strong>ADD EGGS AND VANILLA MIX WELL</p>
+  <p><strong>STEP 3:</strong>ADD FLOUR, CREAM OF TARTAR, BAKING SODA, AND SALT MIX TILL DOUGH FORMS</p>
+  <p><strong>STEP 4:</strong>MIX SUGAR AND CINNAMON IN A SMALL BOWL</p>
+  <p><strong>STEP 5:</strong>ROLL DOUGH INTO 1 Inch BALLS THEN ROLL IN SUGAR CINNAMON MIXTURE PLACE ON UNGREASED COOKIE SHEET</p>
+  <p><strong>STEP 6:</strong>BAKE AT 350 FOR 10 to 12 MINUTES TILL LIGHT BROWN AROUND EDGES</p>
+  <p><strong>REMOVE FROM PAN IMMEDIETLY</strong></p>
+  <p><strong>LET COOL AND ENJOY</strong></p>
+  <p><em>Source: <a target="_blank" href="https://www.youtube.com/watch?v=xvFZjo5PgG0&list=RDxvFZjo5PgG0&start_radio=1">Recipe</a></em></p>
+
+
+
+<h2><strong>YOU ARE LEGALLY REQIRED TO GIVE ME ONE COOKIE IF RECIPE FROM MY WEBSITE IS USED </strong></h2>
+
+<br>
 </center>
 </body>
 
